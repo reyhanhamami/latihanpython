@@ -38,20 +38,36 @@
 #     lagi = input('apakah ingin mencoba lagi? y/n ')
 # print('program berhenti')
 
-from random import randint
-print("="*21)
-print("Permainan Tebak Angka")
-print("~ cara main ~ " "\n" "tebak angka yang di keluarkan oleh program secara acak")
-print("="*21)
-angkaacak = randint(1,10)
-i = 0
-tebakan = eval(input('tebak angka = '))
-while tebakan != angkaacak:
-    if tebakan < angkaacak:
-        print('tebakan anda lebih kecil')
-    else:
-        print('tebakan anda lebih besar')
-    tebakan = eval(input('Coba tebak lagi, masukan angka lagi = '))
-    i = i+1
-print('selamat anda berhasil menjawab, angka acaknya : %d' % (angkaacak))
-print('Jumlah Tebakan kamu : %d' % (i))
+# from random import randint
+# print("="*21)
+# print("Permainan Tebak Angka")
+# print("~ cara main ~ " "\n" "tebak angka yang di keluarkan oleh program secara acak")
+# print("="*21)
+# angkaacak = randint(1,10)
+# i = 0
+# tebakan = eval(input('tebak angka = '))
+# while tebakan != angkaacak:
+#     if tebakan < angkaacak:
+#         print('tebakan anda lebih kecil')
+#     else:
+#         print('tebakan anda lebih besar')
+#     tebakan = eval(input('Coba tebak lagi, masukan angka lagi = '))
+#     i = i+1
+# print('selamat anda berhasil menjawab, angka acaknya : %d' % (angkaacak))
+# print('Jumlah Tebakan kamu : %d' % (i))
+
+def bilanganPrima(angkaAwal, angkaAkhir):
+
+    bil_prima = []
+    for angka in range(angkaAwal, angkaAkhir):
+        if angka > 1:
+            for i in range(2, angka):
+                if (angka % i ) == 0:
+                    break
+            else:
+                bil_prima.append(angka)
+    return(bil_prima)
+
+print(bilanganPrima(5,50))
+print(bilanganPrima(500,600))
+print(bilanganPrima(99,200))
