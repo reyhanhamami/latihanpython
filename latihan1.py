@@ -56,18 +56,45 @@
 # print('selamat anda berhasil menjawab, angka acaknya : %d' % (angkaacak))
 # print('Jumlah Tebakan kamu : %d' % (i))
 
-def bilanganPrima(angkaAwal, angkaAkhir):
+# def bilanganPrima(angkaAwal, angkaAkhir):
 
-    bil_prima = []
-    for angka in range(angkaAwal, angkaAkhir):
-        if angka > 1:
-            for i in range(2, angka):
-                if (angka % i ) == 0:
-                    break
-            else:
-                bil_prima.append(angka)
-    return(bil_prima)
+#     bil_prima = []
+#     for angka in range(angkaAwal, angkaAkhir):
+#         if angka > 1:
+#             for i in range(2, angka):
+#                 if (angka % i ) == 0:
+#                     break
+#             else:
+#                 bil_prima.append(angka)
+#     return(bil_prima)
 
-print(bilanganPrima(5,50))
-print(bilanganPrima(500,600))
-print(bilanganPrima(99,200))
+# print(bilanganPrima(5,50))
+# print(bilanganPrima(500,600))
+# print(bilanganPrima(99,200))
+
+# def cekganjilgenap(angka):
+#     if angka % 2 == 0:
+#         print('bilangan genap')
+#     else:
+#         print('bilangan ganjil')
+
+# cekganjilgenap(3)
+# cekganjilgenap(30)
+# cekganjilgenap(6)
+
+def kalkulator(pertama, kedua, operator):
+    if operator == '+':
+        print('hasil pertambahan adalah =  ',pertama+kedua)
+    elif operator == '-':
+        print('hasil pengurangan adalah =  ',pertama-kedua)
+    elif operator == "*":
+        print('hasil perkalian adalah =  ', pertama*kedua)
+    elif operator == "/":
+        print('hasil dari pembagian adalah =  ', pertama/kedua)
+    else:
+        print('operator tidak dikenali')
+a = input('masukin angka = ')
+b = input('masukin angka = ')
+c = input('masukin operator = ')
+
+kalkulator(int(a), int(b), c)
