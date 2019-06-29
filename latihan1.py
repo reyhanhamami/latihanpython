@@ -82,19 +82,24 @@
 # cekganjilgenap(30)
 # cekganjilgenap(6)
 
-def kalkulator(pertama, kedua, operator):
-    if operator == '+':
-        print('hasil pertambahan adalah =  ',pertama+kedua)
-    elif operator == '-':
-        print('hasil pengurangan adalah =  ',pertama-kedua)
-    elif operator == "*":
-        print('hasil perkalian adalah =  ', pertama*kedua)
-    elif operator == "/":
-        print('hasil dari pembagian adalah =  ', pertama/kedua)
-    else:
-        print('operator tidak dikenali')
-a = input('masukin angka = ')
-b = input('masukin angka = ')
-c = input('masukin operator = ')
+# def kalkulator(pertama, kedua, operator):
+#     if operator == '+':
+#         print('hasil pertambahan adalah =  ',pertama+kedua)
+#     elif operator == '-':
+#         print('hasil pengurangan adalah =  ',pertama-kedua)
+#     elif operator == "*":
+#         print('hasil perkalian adalah =  ', pertama*kedua)
+#     elif operator == "/":
+#         print('hasil dari pembagian adalah =  ', pertama/kedua)
+#     else:
+#         print('operator tidak dikenali')
+# a = input('masukin angka = ')
+# b = input('masukin angka = ')
+# c = input('masukin operator = ')
 
-kalkulator(int(a), int(b), c)
+# kalkulator(int(a), int(b), c)
+
+menu = input('mau makan apa hari ini? ')
+menus = menu.split(',')
+for menuss in menus:
+    print('anda memesan  = %s ' %(menuss))
