@@ -99,7 +99,16 @@
 
 # kalkulator(int(a), int(b), c)
 
-menu = input('mau makan apa hari ini? ')
-menus = menu.split(',')
-for menuss in menus:
-    print('anda memesan  = %s ' %(menuss))
+# menu = input('mau makan apa hari ini? ')
+# menus = menu.split(',')
+# for menuss in menus:
+#     print('anda memesan  = %s ' %(menuss))
+
+# pesertatraining = ['anelka', 'hafidz', 'ilham', 'ayu', 'bayu']
+ 
+# print (pesertatraining[3])
+# print ('semua teman ada %s orang' % (len(pesertatraining)))
+# print ('tampilkan semua teman dengan perulangan')
+# for teman in pesertatraining:
+#     print(teman)
+
