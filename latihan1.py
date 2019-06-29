@@ -82,19 +82,46 @@
 # cekganjilgenap(30)
 # cekganjilgenap(6)
 
-def kalkulator(pertama, kedua, operator):
-    if operator == '+':
-        print('hasil pertambahan adalah =  ',pertama+kedua)
-    elif operator == '-':
-        print('hasil pengurangan adalah =  ',pertama-kedua)
-    elif operator == "*":
-        print('hasil perkalian adalah =  ', pertama*kedua)
-    elif operator == "/":
-        print('hasil dari pembagian adalah =  ', pertama/kedua)
-    else:
-        print('operator tidak dikenali')
-a = input('masukin angka = ')
-b = input('masukin angka = ')
-c = input('masukin operator = ')
+# def kalkulator(pertama, kedua, operator):
+#     if operator == '+':
+#         print('hasil pertambahan adalah =  ',pertama+kedua)
+#     elif operator == '-':
+#         print('hasil pengurangan adalah =  ',pertama-kedua)
+#     elif operator == "*":
+#         print('hasil perkalian adalah =  ', pertama*kedua)
+#     elif operator == "/":
+#         print('hasil dari pembagian adalah =  ', pertama/kedua)
+#     else:
+#         print('operator tidak dikenali')
+# a = input('masukin angka = ')
+# b = input('masukin angka = ')
+# c = input('masukin operator = ')
 
-kalkulator(int(a), int(b), c)
+# kalkulator(int(a), int(b), c)
+
+# menu = input('mau makan apa hari ini? ')
+# menus = menu.split(',')
+# for menuss in menus:
+#     print('anda memesan  = %s ' %(menuss))
+
+# pesertatraining = ['anelka', 'hafidz', 'ilham', 'ayu', 'bayu']
+ 
+# print (pesertatraining[3])
+# print ('semua teman ada %s orang' % (len(pesertatraining)))
+# print ('tampilkan semua teman dengan perulangan')
+# for teman in pesertatraining:
+#     print(teman)
+
+i = 0
+hobi = []
+lagi = 'y'
+while (lagi == 'y' or lagi == 'Y'):
+    hobi_baru = input('inputkan hobi yang ke-%d: ' %(i))
+    hobi.append(hobi_baru)
+    lagi = input('isi lagi gak? y/n: ')
+    i += 1
+print('='*20)
+
+print('kamu memiliki %d hobi' % (i))
+for hobis in hobi:
+    print('- %s' %(hobis))
