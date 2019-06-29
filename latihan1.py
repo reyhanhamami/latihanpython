@@ -112,3 +112,16 @@
 # for teman in pesertatraining:
 #     print(teman)
 
+i = 0
+hobi = []
+lagi = 'y'
+while (lagi == 'y' or lagi == 'Y'):
+    hobi_baru = input('inputkan hobi yang ke-%d: ' %(i))
+    hobi.append(hobi_baru)
+    lagi = input('isi lagi gak? y/n: ')
+    i += 1
+print('='*20)
+
+print('kamu memiliki %d hobi' % (i))
+for hobis in hobi:
+    print('- %s' %(hobis))
